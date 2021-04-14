@@ -6,11 +6,10 @@ public interface IPlayer {
 
     void play(Integer id);
 
-    void add(String title,String author);
+    void add(String title, String author);
 
     void delete(Integer id);
 
     void shuffle();
 
-    void playNextOrPrevious();
 }
