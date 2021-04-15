@@ -48,6 +48,6 @@ public class SongFile {
 
     @Override
     public String toString() {
-        return id + " - " + name+".mp3";
+        return id + " - " + name + ".mp3";
     }
 }

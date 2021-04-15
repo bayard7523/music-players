@@ -21,15 +21,22 @@ public class Program {
         player.play(1);
         player.stop();
         player.play(12);
-//        player.delete(0);
+        player.delete(0);
         player.shuffle();
         player.showAll();
 
-
-
-        Scanner scanner=new Scanner(System.in);
+//        MusicPlayerWithoutSong player = new MusicPlayerWithoutSong();
+//        player.showAll();
+//        player.play(0);
+//        player.shuffle();
+//        player.showAll();
+//        player.delete(0);
+//        player.showAll();
+//        player.sort();
+        Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
     }
+
 
     static {
         JFXPanel jfxPanel = new JFXPanel();

@@ -65,6 +65,10 @@ public class MusicPlayerWithSong {
         Collections.shuffle(allMusic);
     }
 
+    public String getCurrentSong(){
+        return currentSong;
+    }
+
     private boolean checkArrayList(Integer id) {
         try {
             return allMusic.get(id) != null;

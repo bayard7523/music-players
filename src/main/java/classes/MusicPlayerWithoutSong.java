@@ -18,7 +18,7 @@ public class MusicPlayerWithoutSong implements IPlayer {
 
     @Override
     public void showAll() {
-        sortAll().forEach(song -> System.out.println(allMusic.indexOf(song) + " - " + song.toString()));
+        allMusic.forEach(song -> System.out.println(allMusic.indexOf(song) + " - " + song.toString()));
     }
 
     @Override
@@ -53,7 +53,7 @@ public class MusicPlayerWithoutSong implements IPlayer {
         }
     }
 
-    private List<Song> sortAll() {
-        return allMusic.stream().sorted(Comparator.comparingInt(Song::getId)).collect(Collectors.toList());
+    public void sort() {
+        allMusic.stream().sorted(Comparator.comparingInt(allMusic::indexOf)).collect(Collectors.toList()).forEach(song -> System.out.println(allMusic.indexOf(song) + " - " + song.toString()));
     }
 }
